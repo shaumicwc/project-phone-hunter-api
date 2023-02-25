@@ -13,14 +13,14 @@
 
 <body>
     <header>
-        <h1>Welcome to my PHONE HUNTER</h1>
+        <h1 class="text-center text-danger">Welcome to my PHONE HUNTER</h1>
 
 
     </header>
 
-    <main class="container">
-        <section>
-            <div class="mb-3 w-50">
+    <main class="container ">
+        <section class="d-flex justify-content-center">
+            <div class="mb-3 w-25  text-center">
 
                 <input id="search-field" type="email" class="form-control" id="exampleFormControlInput1"
                     placeholder="Search Your Phone">
@@ -28,11 +28,7 @@
                 <div id="btn-search" class="btn btn-primary">
                     Search
                 </div>
-
             </div>
-
-
-
         </section>
 
         <!-- -----search result--------- -->
@@ -46,6 +42,15 @@
                 <h3 class="text-warning"> No Phone Found. Try Again</h3>
             </div>
 
+        </section>
+
+        <!-- -----------spinner----------- -->
+        <section id="spinner" class="d-none">
+            <div style="height: 400px;" class="d-flex justify-content-center align-items-center text-center">
+                <div class="spinner-border text-success" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
         </section>
 
 
